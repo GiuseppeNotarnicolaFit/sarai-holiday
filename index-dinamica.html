@@ -1,0 +1,463 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Holiday Photoshoot in Gran Canaria | Motions by Sarai</title>
+<meta name="description" content="Private holiday photoshoots and films in Gran Canaria for couples and families. 200+ sessions on the island, four languages, edited photos in 12 to 72 hours. Book on WhatsApp.">
+<meta property="og:title" content="Holiday Memories · Motions by Sarai">
+<meta property="og:description" content="You're always the one taking the photos. This time, be in them.">
+<meta property="og:image" content="img/hero.jpg">
+<link rel="icon" href="img/logo-tondo-nero.png">
+<style>
+@font-face{font-family:Bodoni;src:url(font/BodoniModa-opsz-wght.ttf);font-weight:400 900;font-display:swap}
+@font-face{font-family:Bodoni;font-style:italic;src:url(font/BodoniModa-Italic-opsz-wght.ttf);font-weight:400 900;font-display:swap}
+@font-face{font-family:Mont;src:url(font/Montserrat-wght.ttf);font-weight:100 900;font-display:swap}
+@font-face{font-family:Script;src:url(font/WindSong-Regular.ttf);font-display:swap}
+:root{--paper:#FAF6F1;--ink:#141210;--gold:#CC9B4F;--gold-d:#A87A32;--line:#D9CFC2;--soft:#5A534B;--wa:#1F7A4D}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+body{background:var(--paper);color:var(--ink);font-family:Mont,Helvetica,Arial,sans-serif;font-size:17px;line-height:1.6;-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%;height:auto}
+a{color:inherit}
+.skip{position:absolute;left:-9999px}
+.skip:focus{left:12px;top:12px;background:#fff;padding:8px 12px;z-index:99}
+.wrap{width:min(1120px,100% - 40px);margin:0 auto}
+.eyebrow{font-size:12px;letter-spacing:.24em;text-transform:uppercase;font-weight:600;color:var(--gold-d)}
+h1,h2,h3{font-family:Bodoni,Georgia,serif;font-weight:500;line-height:1.08;letter-spacing:-.01em}
+h2{font-size:clamp(32px,5.4vw,52px);margin:.35em 0 .4em}
+h2 em,h1 em{font-style:italic;color:var(--gold-d)}
+p+p{margin-top:.9em}
+section{padding:72px 0}
+:focus-visible{outline:3px solid var(--gold);outline-offset:3px}
+
+/* barra */
+.bar{background:var(--ink);color:#fff;position:sticky;top:0;z-index:20}
+.bar .wrap{display:flex;align-items:center;justify-content:space-between;height:64px;gap:16px}
+.bar .brand img{height:38px;width:auto}
+.bar nav{display:flex;align-items:center;gap:22px;font-size:13px;letter-spacing:.18em;text-transform:uppercase;font-weight:600}
+.bar nav a{text-decoration:none;padding:10px 0}
+.bar nav a.home:hover{color:var(--gold)}
+.bar .mini{border:1px solid var(--gold);color:var(--gold);padding:9px 14px;border-radius:40px}
+
+/* testata */
+.hero{padding:40px 0 56px}
+.hero .wrap{display:grid;grid-template-columns:1fr;gap:32px;align-items:center}
+.hero .problem{font-family:Bodoni,serif;font-style:italic;font-size:21px;color:var(--soft);margin:14px 0 22px;line-height:1.35}
+.hero h1{font-size:clamp(46px,9vw,82px)}
+.hero h1 .kw{display:block;font-family:Mont,sans-serif;font-size:15px;letter-spacing:.2em;text-transform:uppercase;font-weight:600;color:var(--ink);margin-bottom:14px}
+.hero .script{font-family:Script,cursive;font-size:1.1em;color:var(--gold-d);font-weight:400;letter-spacing:0}
+.usp{font-size:18px;max-width:34em;margin:18px 0 0}
+.proofline{font-size:14px;color:var(--soft);margin:22px 0 14px;letter-spacing:.02em}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:12px;background:var(--gold);color:var(--ink);text-decoration:none;font-weight:700;font-size:15px;letter-spacing:.12em;text-transform:uppercase;padding:18px 28px;border-radius:48px;min-height:56px;box-shadow:0 10px 24px -12px rgba(168,122,50,.8);transition:transform .2s,background .2s}
+.btn:hover{background:#d8ab62;transform:translateY(-1px)}
+.btn svg{width:22px;height:22px;flex:none}
+.under{font-size:13px;color:var(--soft);margin-top:12px}
+.hero figure{position:relative}
+.hero figure img{border-radius:6px;width:100%;aspect-ratio:3/2;object-fit:cover}
+.hero figcaption{font-size:12px;color:var(--soft);margin-top:8px;letter-spacing:.04em}
+@media (min-width:900px){
+ .hero{padding:64px 0 72px}
+ .hero .wrap{grid-template-columns:1.05fr 1fr;gap:56px}
+}
+
+/* vantaggi */
+.perks{background:var(--ink);color:#fff;padding:36px 0}
+.perks ul{list-style:none;display:grid;grid-template-columns:1fr;gap:22px}
+.perks li{display:grid;grid-template-columns:auto 1fr;gap:16px;align-items:start}
+.perks .n{font-family:Bodoni,serif;font-size:30px;color:var(--gold);line-height:1;min-width:2.4em}
+.perks b{display:block;font-size:13px;letter-spacing:.18em;text-transform:uppercase;margin-bottom:2px}
+.perks span{font-size:15px;color:#D9CFC2}
+@media (min-width:820px){.perks ul{grid-template-columns:repeat(3,1fr);gap:32px}}
+
+/* interesse */
+.why .wrap{display:grid;gap:40px}
+.why .lead{font-family:Bodoni,serif;font-style:italic;font-size:24px;color:var(--soft);margin-bottom:20px}
+.why p{max-width:36em}
+@media (min-width:900px){.why .wrap{grid-template-columns:1fr 1fr;align-items:center}}
+.why img{border-radius:6px}
+
+/* galleria */
+.gallery{padding-top:0}
+.grid{display:grid;grid-template-columns:repeat(2,1fr);gap:10px}
+.grid img{width:100%;height:100%;object-fit:cover;border-radius:4px;aspect-ratio:4/5}
+.grid .wide{grid-column:span 2;aspect-ratio:3/2}
+@media (min-width:820px){.grid{grid-template-columns:repeat(4,1fr);gap:12px}.grid .wide{grid-column:span 2}}
+.note{font-size:13px;color:var(--soft);margin-top:14px}
+
+/* chi */
+.me{background:#F1EAE0}
+.me .wrap{display:grid;gap:36px}
+.me .sig{font-family:Script,cursive;font-size:44px;color:var(--gold-d);line-height:1;margin-top:18px}
+.stats{display:grid;grid-template-columns:repeat(2,1fr);border-top:1px solid var(--line);border-left:1px solid var(--line);margin-top:8px}
+.stats div{padding:22px 16px;border-right:1px solid var(--line);border-bottom:1px solid var(--line);text-align:center}
+.stats b{display:block;font-family:Bodoni,serif;font-size:38px;font-weight:600;line-height:1}
+.stats span{display:block;font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:var(--soft);margin-top:8px}
+@media (min-width:900px){.me .wrap{grid-template-columns:1.1fr 1fr;align-items:center}.stats{grid-template-columns:repeat(2,1fr)}}
+
+/* come funziona */
+.steps ol{list-style:none;display:grid;gap:18px;margin-top:28px}
+.steps li{border-top:1px solid var(--line);padding-top:18px;display:grid;grid-template-columns:3.2em 1fr;gap:10px}
+.steps .num{font-family:Bodoni,serif;font-size:34px;color:var(--gold-d);line-height:1}
+.steps h3{font-size:24px;margin-bottom:4px}
+@media (min-width:900px){.steps ol{grid-template-columns:repeat(3,1fr);gap:32px}}
+.easy{display:grid;grid-template-columns:1fr;gap:12px;margin-top:40px}
+.easy div{background:#fff;border:1px solid var(--line);border-radius:6px;padding:18px 20px}
+.easy b{display:block;font-size:13px;letter-spacing:.16em;text-transform:uppercase;margin-bottom:4px}
+.easy span{font-size:15px;color:var(--soft)}
+@media (min-width:820px){.easy{grid-template-columns:repeat(4,1fr)}}
+
+/* prezzi */
+.prices{background:var(--ink);color:#fff}
+.prices .eyebrow{color:var(--gold)}
+.prices .anchor{font-family:Bodoni,serif;font-style:italic;font-size:22px;color:#D9CFC2;max-width:30em}
+.cards{display:grid;gap:18px;margin-top:36px}
+.card{background:var(--paper);color:var(--ink);border-radius:8px;padding:30px 26px 26px;position:relative;display:flex;flex-direction:column}
+.card.pick{outline:2px solid var(--gold)}
+.badge{position:absolute;top:-13px;left:26px;background:var(--gold);color:var(--ink);font-size:11px;font-weight:700;letter-spacing:.2em;text-transform:uppercase;padding:6px 14px;border-radius:30px}
+.card h3{font-size:30px}
+.card .sub{font-family:Bodoni,serif;font-style:italic;color:var(--soft);margin-top:2px}
+.card .price{font-family:Bodoni,serif;font-weight:600;font-size:52px;line-height:1;margin:18px 0 16px}
+.card .price small{font-size:.5em;vertical-align:.6em;margin-right:4px}
+.card ul{list-style:none;border-top:1px solid var(--line);padding-top:14px;margin-bottom:22px;font-size:15px}
+.card li{padding:5px 0 5px 22px;position:relative}
+.card li::before{content:"";position:absolute;left:2px;top:14px;width:9px;height:1.5px;background:var(--gold-d)}
+.card li.plus{font-weight:700;color:var(--gold-d)}
+.card .btn{margin-top:auto;width:100%;font-size:13px;padding:16px 18px}
+.card:not(.pick) .btn{background:transparent;border:1.5px solid var(--ink);box-shadow:none}
+.card:not(.pick) .btn:hover{background:var(--ink);color:#fff}
+@media (min-width:900px){.cards{grid-template-columns:repeat(3,1fr);align-items:stretch}}
+.small{font-size:14px;color:#D9CFC2;margin-top:26px;max-width:46em}
+
+/* domande */
+.faq details{border-top:1px solid var(--line);padding:18px 0}
+.faq details:last-child{border-bottom:1px solid var(--line)}
+.faq summary{cursor:pointer;font-family:Bodoni,serif;font-size:22px;list-style:none;display:flex;justify-content:space-between;gap:16px;min-height:44px;align-items:center}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"+";color:var(--gold-d);font-family:Mont,sans-serif;font-size:26px;font-weight:300}
+.faq details[open] summary::after{content:"\2212"}
+.faq details p{color:var(--soft);margin-top:8px;max-width:42em}
+.faq .wrap{max-width:860px}
+
+/* chiusura */
+.end{background:var(--ink);color:#fff;text-align:center;padding:84px 0 72px}
+.end img.logo{width:120px;margin:0 auto 26px}
+.end h2{color:#fff}
+.end p{color:#D9CFC2;max-width:32em;margin:0 auto 28px}
+.contacts{margin-top:28px;font-size:15px;color:#D9CFC2;display:flex;flex-wrap:wrap;justify-content:center;gap:10px 26px}
+.contacts a{text-decoration:none;border-bottom:1px solid rgba(204,155,79,.5);padding:6px 0}
+.homecta{display:inline-block;margin-top:36px;font-size:13px;letter-spacing:.2em;text-transform:uppercase;font-weight:600;color:var(--gold);text-decoration:none;border:1px solid rgba(204,155,79,.6);padding:14px 22px;border-radius:40px}
+footer{background:#0B0A09;color:#8C847A;font-size:12px;padding:22px 0 96px;text-align:center;letter-spacing:.06em}
+footer a{color:#B9AE9F}
+
+/* WhatsApp fisso sul telefono */
+.float{position:fixed;left:16px;right:16px;bottom:14px;z-index:30;display:flex}
+.float .btn{width:100%;box-shadow:0 12px 30px -8px rgba(0,0,0,.45)}
+@media (min-width:900px){.float{display:none}footer{padding-bottom:22px}}
+
+/* Motion edition: original content is visible without enhancement. */
+:root{--ease:cubic-bezier(.2,.7,.2,1)}
+html,body{overflow-x:clip}body{overflow-wrap:break-word}
+.bar nav{gap:14px}.bar nav a,.bar .brand,.contacts a,footer a{min-height:44px;display:inline-flex;align-items:center}
+.btn{transition:transform .6s var(--ease);max-width:100%;text-align:center}
+.scroll-progress{position:fixed;inset:0 0 auto;height:3px;background:var(--gold);z-index:100;transform:scaleX(0);transform-origin:left;pointer-events:none}
+.reveal{transition:opacity .75s var(--ease),transform .75s var(--ease);transition-delay:var(--delay,0ms)}
+.js .reveal:not(.seen){opacity:0;transform:translateY(24px)}
+h2 em{transition:opacity .7s var(--ease) .16s,transform .7s var(--ease) .16s;display:inline-block}
+.js h2.reveal:not(.seen) em{opacity:0;transform:translateY(12px)}
+.word-mask{display:inline-block;overflow:clip;vertical-align:bottom;padding-bottom:.12em;margin-bottom:-.12em}
+.word{display:inline-block;transition:transform .8s var(--ease);transition-delay:var(--word-delay,0ms)}
+.js .word-title:not(.seen) .word{transform:translateY(115%)}
+.hero h1 em{position:relative;display:inline-block}.hero h1 em::after{content:'';position:absolute;left:0;right:0;bottom:-7px;height:1px;background:var(--gold);transform-origin:left;transition:transform .8s var(--ease) 1.05s}
+.js .hero h1:not(.seen) em::after{transform:scaleX(0)}
+.hero-frame{position:relative;overflow:hidden;border-radius:6px;aspect-ratio:3/2;background:var(--line)}
+.hero .hero-frame img{position:absolute;inset:0;width:100%;height:100%;border-radius:0;opacity:0;transition:opacity 1.2s var(--ease)}
+.hero .hero-frame img.active{opacity:1}.js.motion .hero-frame img.active{animation:kenburns 6.2s linear both}
+@keyframes kenburns{from{transform:scale(1)}to{transform:scale(1.055)}}
+.hero-frame.paused img{animation-play-state:paused!important}
+.corner{position:absolute;width:24px;height:24px;border:solid var(--gold);z-index:2;pointer-events:none}
+.corner:nth-of-type(1){left:13px;top:13px;border-width:1px 0 0 1px}.corner:nth-of-type(2){right:13px;top:13px;border-width:1px 1px 0 0}.corner:nth-of-type(3){left:13px;bottom:13px;border-width:0 0 1px 1px}.corner:nth-of-type(4){right:13px;bottom:13px;border-width:0 1px 1px 0}
+.shutter{position:absolute;inset:0;background:white;opacity:0;pointer-events:none;z-index:3}.shutter.flash{animation:shutter .5s ease-out}
+@keyframes shutter{0%{opacity:.16}100%{opacity:0}}
+.marquee{overflow:hidden;background:var(--ink);color:var(--gold);padding:18px 0;margin-bottom:48px;font:italic 26px Bodoni,serif}
+.marquee-track{display:flex;width:max-content;animation:marquee 38s linear infinite}.marquee span{white-space:nowrap;padding-right:50px}
+@keyframes marquee{to{transform:translateX(-50%)}}
+.why-photo{overflow:hidden;border-radius:6px}.why-photo img{width:100%;height:100%;object-fit:cover;transform:translateY(var(--parallax,0%)) scale(1.08)}
+.why-photo img{clip-path:inset(0 0 0 0);transition:clip-path .9s var(--ease)}.js .why-photo:not(.seen) img{clip-path:inset(0 100% 0 0)}
+.grid{align-items:stretch}.photo-button{display:block;background:none;border:0;cursor:zoom-in;overflow:hidden;border-radius:4px;min-width:0;width:100%;aspect-ratio:4/5}.grid .photo-button.wide{aspect-ratio:3/2}.photo-button img{transition:filter .85s var(--ease),transform .85s var(--ease);height:100%;width:100%}
+.js .photo-button:not(.seen) img{filter:blur(12px) saturate(0);transform:scale(1.06)}
+.gallery-meter{display:none}.sig{clip-path:inset(0 0 0 0);transition:clip-path .9s var(--ease)}.js .sig:not(.seen){clip-path:inset(0 100% 0 0)}
+.steps ol{position:relative;padding-left:15px}.steps ol::before{content:'';position:absolute;left:0;top:18px;bottom:0;width:1px;background:var(--gold);transform-origin:top;transform:scaleY(var(--step-progress,1))}
+.steps li{position:relative}.steps li::before{content:'';position:absolute;width:5px;height:5px;border-radius:50%;background:var(--gold);left:-17px;top:26px}
+.card{transition:opacity .8s var(--ease),transform .8s var(--ease);transform:perspective(900px) rotateX(var(--rx,0deg)) rotateY(var(--ry,0deg))}
+.badge{overflow:hidden}.badge::after{content:'';position:absolute;inset:0;background:linear-gradient(110deg,transparent,rgba(255,255,255,.6),transparent);transform:translateX(-150%);animation:shimmer 6s ease-in-out infinite}
+@keyframes shimmer{0%,78%{transform:translateX(-150%)}96%,100%{transform:translateX(150%)}}
+.end .logo{transition:opacity .85s var(--ease),transform .85s var(--ease)}.js .end .logo:not(.seen){opacity:0;transform:scale(.88)}
+.js .float{visibility:hidden;opacity:0;transform:translateY(120%);transition:opacity .6s var(--ease),transform .6s var(--ease)}
+.js .float.show{visibility:visible;opacity:1;transform:none}.float .btn{position:relative}.float .btn::before{content:'';position:absolute;inset:-4px;border:1px solid var(--gold);border-radius:inherit;animation:pulse 6s ease-out infinite;pointer-events:none}
+@keyframes pulse{0%,82%{opacity:0;transform:scale(1)}85%{opacity:.5;transform:scale(1)}100%{opacity:0;transform:scale(1.12)}}
+.float svg{display:none}.lightbox{position:fixed;inset:0;width:100vw;height:100dvh;max-width:none;max-height:none;border:0;padding:64px 16px;background:rgba(20,18,16,.97);color:var(--paper);overflow:hidden}
+.lightbox::backdrop{background:rgba(20,18,16,.9)}.lightbox img{width:100%;height:100%;object-fit:contain}.lightbox button{position:absolute;width:48px;height:48px;border:1px solid var(--gold);border-radius:50%;background:var(--ink);color:var(--gold);cursor:pointer;display:grid;place-items:center}.lightbox button svg{width:22px;height:22px}.lb-close{right:16px;top:10px}.lb-prev{left:16px;top:50%}.lb-next{right:16px;top:50%}
+@media(max-width:819px){.gallery .grid{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;scroll-padding-left:0;gap:12px;scrollbar-width:none;padding:8px 2px 16px}.grid::-webkit-scrollbar{display:none}.grid .photo-button,.grid .photo-button.wide{flex:0 0 78vw;aspect-ratio:4/5}.gallery-meter{display:flex;align-items:center;gap:18px;font:14px Mont,sans-serif;color:var(--gold-d);margin-top:4px}.gallery-meter .track{height:1px;background:var(--line);flex:1}.gallery-meter .fill{height:100%;background:var(--gold);transform:scaleX(var(--gallery-progress,.125));transform-origin:left}.hero{padding-top:28px}.hero .btn,.end .btn{font-size:12px;padding:17px 16px}.hero .problem{margin:12px 0 18px}.usp{font-size:16px}.proofline{margin-top:16px}.hero h1{font-size:46px}.hero h1 .kw{font-size:12px;line-height:1.6}.bar nav{font-size:10px;gap:10px}.bar .brand img{max-width:115px;object-fit:contain}.bar .mini{padding:9px 10px}.homecta{font-size:11px;letter-spacing:.12em}}
+@media(min-width:900px){.steps ol{padding:14px 0 0}.steps ol::before{left:0;right:0;top:0;bottom:auto;width:auto;height:1px;transform-origin:left;transform:scaleX(var(--step-progress,1))}.steps li::before{left:0;top:-18px}.js .float{display:flex;left:auto;right:26px;bottom:26px}.float .btn{width:60px;height:60px;padding:0;border-radius:50%;font-size:0;gap:0}.float svg{display:block;width:26px;height:26px}}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}.js .reveal,.js .word-title .word,.js h2 em,.js .end .logo{opacity:1!important;transform:none!important}.js .why-photo img,.js .sig{clip-path:none!important}.js .photo-button img{filter:none!important;transform:none!important}.hero h1 em::after{transform:none!important}.why-photo img{transform:none!important}.steps ol::before{transform:none!important}}
+
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="bar">
+ <div class="wrap">
+  <a class="brand" href="https://www.motionsbysarai.com/" aria-label="Motions by Sarai, home"><img src="img/logo-orizz.png" alt="Motions by Sarai" width="138" height="38"></a>
+  <nav aria-label="Main">
+   <a class="home" href="https://www.motionsbysarai.com/">Home</a>
+   <a class="mini" href="https://wa.me/34672587073?text=Hi%20Sara!%20I%20saw%20your%20Holiday%20Memories%20flyer.%20I%27d%20like%20a%20holiday%20photoshoot.%20Our%20dates%3A%20">WhatsApp</a>
+  </nav>
+ </div>
+</header>
+
+<main id="main">
+
+<!-- TESTATA -->
+<section class="hero" aria-labelledby="t">
+ <div class="wrap">
+  <div>
+   <p class="eyebrow">Holiday Memories · Gran Canaria</p>
+   <p class="problem">You're always the one taking the photos.</p>
+   <h1 id="t"><span class="kw">Holiday photoshoot in Gran Canaria</span>This time, <em>be in them.</em></h1>
+   <p class="usp">One relaxed hour with a photographer who lives on the island and knows where the light falls. Your edited gallery reaches you within 12 to 72 hours, ready to download on your phone.</p>
+   <p class="proofline">200+ sessions in Gran Canaria · English · Español · Nederlands · Português</p>
+   <a class="btn" href="https://wa.me/34672587073?text=Hi%20Sara!%20I%20saw%20your%20Holiday%20Memories%20flyer.%20I%27d%20like%20a%20holiday%20photoshoot.%20Our%20dates%3A%20">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.2-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.7 11.8 11.8 0 0 0 4.5 4c1.7.7 2.4.8 3.2.6.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.2-1.2-.1-.1-.3-.2-.5-.3Z"/></svg>
+    Book your shoot on WhatsApp</a>
+   <p class="under">Send me your dates. I reply with a plan within a day.</p>
+  </div>
+  <figure>
+   <img src="img/hero.jpg" width="1400" height="933" alt="A family of four walking hand in hand along the shore on a sunny beach in Gran Canaria" fetchpriority="high">
+   <figcaption>A family holiday session in Gran Canaria. Photo: Motions by Sarai</figcaption>
+  </figure>
+ </div>
+</section>
+
+<!-- VANTAGGI -->
+<div class="perks" role="region" aria-label="What you get">
+ <div class="wrap">
+  <ul>
+   <li><span class="n">12-72h</span><div><b>Fast delivery</b><span>A link to your edited gallery, ready to download on your phone.</span></div></li>
+   <li><span class="n">4</span><div><b>In your language</b><span>English, Spanish, Dutch or Portuguese. Nothing gets lost.</span></div></li>
+   <li><span class="n">1</span><div><b>One person, start to finish</b><span>I plan the shoot, take the photos and edit every one of them myself.</span></div></li>
+  </ul>
+ </div>
+</div>
+
+<!-- INTERESSE -->
+<section class="why" aria-labelledby="why">
+ <div class="wrap">
+  <div>
+   <p class="eyebrow">Why book a shoot</p>
+   <h2 id="why">The island photographs itself. <em>Almost.</em></h2>
+   <p class="lead">You just need someone who knows where to stand.</p>
+   <p>The dunes at Maspalomas. The harbour at Puerto Mogán. Las Canteras at six in the evening. Same beach, different hour, completely different picture.</p>
+   <p>Hand your phone to a stranger and you get proof you were here. Sun in your eyes, someone half out of the frame. You keep it anyway, but it never looks like the day felt.</p>
+   <p>I've lived here for more than eleven years. I know which beach turns gold in the evening and which corner keeps the wind off you.</p>
+  </div>
+  <img src="img/g7.jpg" width="1400" height="933" alt="A pregnant mother hugging her young son by the sea, with the sun behind them" loading="lazy">
+ </div>
+</section>
+
+<!-- GALLERIA -->
+<section class="gallery" aria-labelledby="gal">
+ <div class="wrap">
+  <h2 id="gal" class="eyebrow" style="font-family:Mont,sans-serif;font-size:12px;margin-bottom:18px">From my holiday sessions</h2>
+  <div class="grid">
+   <img src="img/g1.jpg" width="933" height="1400" alt="Mother and son smiling at each other on a beach below the cliffs" loading="lazy">
+   <img src="img/g4.jpg" width="1114" height="1400" alt="A pregnant woman standing barefoot in the shallow water at sunset" loading="lazy">
+   <img class="wide" src="img/g2.jpg" width="1400" height="933" alt="A family walking along the water's edge below golden rocks" loading="lazy">
+   <img class="wide" src="img/g3.jpg" width="1400" height="933" alt="A couple laughing together on a white sofa at a beach club" loading="lazy">
+   <img src="img/g6.jpg" width="874" height="1400" alt="Two brothers in striped shirts walking through the waves" loading="lazy">
+   <img src="img/g8.jpg" width="933" height="1400" alt="A young couple holding their baby by a hotel pool" loading="lazy">
+   <img class="wide" src="img/g5.jpg" width="1400" height="933" alt="Three children playing with a small white dog on the sand" loading="lazy">
+   <img class="wide" src="img/g9.jpg" width="1400" height="933" alt="A family portrait on the beach with the sea and cliffs behind" loading="lazy">
+  </div>
+  <p class="note">The photos on this page come from my own holiday sessions in Gran Canaria.</p>
+ </div>
+</section>
+
+<!-- CHI C'E' DIETRO -->
+<section class="me" aria-labelledby="me">
+ <div class="wrap">
+  <div>
+   <p class="eyebrow">Behind the camera</p>
+   <h2 id="me">Tell me the picture in your head. <em>My job is to make it real.</em></h2>
+   <p>I'm Sara, the photographer and filmmaker behind Motions by Sarai. I've spent more than sixteen years in photography, film and digital media, and I've done over 200 sessions on this island: couples, families with small kids, proposals, people travelling on their own.</p>
+   <p>Some of you know exactly what you want. Some of you just want to look happy together. Both work for me. I plan the place, the time and the light around you, and I'm not done until it's right.</p>
+   <p class="sig">Sara</p>
+  </div>
+  <div class="stats" role="list">
+   <div role="listitem"><b>16+</b><span>Years in digital media</span></div>
+   <div role="listitem"><b>200+</b><span>Sessions in Gran Canaria</span></div>
+   <div role="listitem"><b>4</b><span>Languages</span></div>
+   <div role="listitem"><b>12-72h</b><span>Delivery</span></div>
+  </div>
+ </div>
+</section>
+
+<!-- COME FUNZIONA E FIDUCIA -->
+<section class="steps" aria-labelledby="how">
+ <div class="wrap">
+  <p class="eyebrow">How it works</p>
+  <h2 id="how">Show up. <em>That's the only job.</em></h2>
+  <p>I handle the location, the light and the awkward directions.</p>
+  <ol>
+   <li><span class="num">01</span><div><h3>Message me</h3><p>Send your dates and what you're picturing. I reply with a plan within a day.</p></div></li>
+   <li><span class="num">02</span><div><h3>We shoot</h3><p>We meet at the spot. One relaxed hour, simple directions, real moments.</p></div></li>
+   <li><span class="num">03</span><div><h3>You keep it</h3><p>Your edited gallery arrives within 12 to 72 hours. Yours to keep.</p></div></li>
+  </ol>
+  <div class="easy">
+   <div><b>Not a model?</b><span>Nobody is. I tell you where to look and what to do with your hands.</span></div>
+   <div><b>Kids, grandparents, dog</b><span>Groups of any size, within reason. We stop whenever the little ones need a break.</span></div>
+   <div><b>Location chosen</b><span>Dunes, harbour, old town. You choose the feeling, I find the place.</span></div>
+   <div><b>Hand-edited</b><span>Every image edited and colour-graded by me.</span></div>
+  </div>
+  <!-- RECENSIONI: da inserire quando Sara manda 4-6 opinioni vere (nome, paese, data, consenso). Mai inventate. -->
+ </div>
+</section>
+
+<!-- PREZZI -->
+<section class="prices" id="sessions" aria-labelledby="pr">
+ <div class="wrap">
+  <p class="eyebrow">Choose your session</p>
+  <h2 id="pr" style="color:#fff">One hour of your holiday. <em>Photos you'll still look at in twenty years.</em></h2>
+  <p class="anchor">Three ways to do it. Pick the one that fits your trip.</p>
+  <div class="cards">
+   <article class="card">
+    <h3>The Film</h3><p class="sub">Your photos, plus a cinematic film</p>
+    <p class="price"><small>€</small>590</p>
+    <ul><li>90 minutes · 1-2 locations</li><li>20-30 hand-edited images</li><li class="plus">60-second cinematic film</li></ul>
+    <a class="btn" href="https://wa.me/34672587073?text=Hi%20Sara!%20I%20saw%20your%20Holiday%20Memories%20flyer.%20I%27m%20interested%20in%20The%20Film%20(%E2%82%AC590).%20Our%20dates%3A%20">Book The Film</a>
+   </article>
+   <article class="card pick">
+    <span class="badge">Most popular</span>
+    <h3>Golden Hour</h3><p class="sub">More time, more locations</p>
+    <p class="price"><small>€</small>390</p>
+    <ul><li>60 minutes · 1-2 locations</li><li>20-30 hand-edited images</li><li>Couples · Families · Individual</li></ul>
+    <a class="btn" href="https://wa.me/34672587073?text=Hi%20Sara!%20I%20saw%20your%20Holiday%20Memories%20flyer.%20I%27m%20interested%20in%20Golden%20Hour%20(%E2%82%AC390).%20Our%20dates%3A%20">Book Golden Hour</a>
+   </article>
+   <article class="card">
+    <h3>The Moment</h3><p class="sub">The essentials, beautifully done</p>
+    <p class="price"><small>€</small>210</p>
+    <ul><li>45 minutes · 1 location</li><li>10-20 hand-edited images</li><li>Couples · Families · Individual</li></ul>
+    <a class="btn" href="https://wa.me/34672587073?text=Hi%20Sara!%20I%20saw%20your%20Holiday%20Memories%20flyer.%20I%27m%20interested%20in%20The%20Moment%20(%E2%82%AC210).%20Our%20dates%3A%20">Book The Moment</a>
+   </article>
+  </div>
+  <p class="small">The evening light is the best of the day, so those slots go first. If your dates are set, message me and I'll hold one for you.</p>
+ </div>
+</section>
+
+<!-- DOMANDE -->
+<section class="faq" aria-labelledby="faq">
+ <div class="wrap">
+  <p class="eyebrow">Before you book</p>
+  <h2 id="faq">Good questions</h2>
+  <details><summary>What should we wear?</summary><p>Soft colours that go together without matching. Light fabrics like cotton or linen. Skip logos and busy prints. For the dunes or the rocks, sandals with some grip.</p></details>
+  <details><summary>What time of day is best?</summary><p>Early morning or the last hours before sunset. The light is softer and warmer, and everyone looks more like themselves in it.</p></details>
+  <details><summary>We have small children. Is that OK?</summary><p>Of course. Bring water and a snack, and we take a break whenever they need one.</p></details>
+  <details><summary>Can we choose the location?</summary><p>Yes. Or tell me the feeling you want, relaxed, dramatic, colourful, and I'll suggest the place. For spots further than about 30 minutes away, a small travel supplement may apply. I'll tell you before you book.</p></details>
+  <details><summary>When and how do we get the photos?</summary><p>Within 12 to 72 hours, in a digital gallery you can download straight to your phone. With The Film, the 60-second film comes with it.</p></details>
+  <details><summary>In which language do we talk?</summary><p>Yours, if it's English, Spanish, Dutch or Portuguese.</p></details>
+ </div>
+</section>
+
+<!-- CHIUSURA -->
+<section class="end" aria-labelledby="end">
+ <div class="wrap">
+  <img class="logo" src="img/logo-tondo-bianco.png" width="360" height="360" alt="Motions by Sarai logo" loading="lazy">
+  <h2 id="end">This trip deserves <em>more than a phone photo.</em></h2>
+  <p>Send me your dates and a few words about the photo you have in mind. I'll come back with a place, a time and a plan.</p>
+  <a class="btn" href="https://wa.me/34672587073?text=Hi%20Sara!%20I%20saw%20your%20Holiday%20Memories%20flyer.%20I%27d%20like%20a%20holiday%20photoshoot.%20Our%20dates%3A%20">Book your shoot on WhatsApp</a>
+  <div class="contacts">
+   <a href="tel:+34672587073">+34 672 587 073</a>
+   <a href="mailto:motionsbysarai@gmail.com">motionsbysarai@gmail.com</a>
+   <a href="https://www.instagram.com/motionsbysarai/">Instagram @motionsbysarai</a>
+  </div>
+  <a class="homecta" href="https://www.motionsbysarai.com/">See more of my work · motionsbysarai.com</a>
+ </div>
+</section>
+
+</main>
+
+<footer>
+ <p>© 2026 Motions by Sarai · Videography &amp; Photography · Maspalomas, Gran Canaria · <a href="https://www.motionsbysarai.com/">Home</a></p>
+</footer>
+
+<div class="float">
+ <a class="btn" href="https://wa.me/34672587073?text=Hi%20Sara!%20I%20saw%20your%20Holiday%20Memories%20flyer.%20I%27d%20like%20a%20holiday%20photoshoot.%20Our%20dates%3A%20">Book on WhatsApp</a>
+</div>
+<script>
+
+(() => {
+'use strict';
+const $=(s,r=document)=>r.querySelector(s), $$=(s,r=document)=>[...r.querySelectorAll(s)];
+const root=document.documentElement, reduced=matchMedia('(prefers-reduced-motion: reduce)'), capable='IntersectionObserver' in window;
+root.classList.add('js');
+const motion=()=>!reduced.matches && capable;
+root.classList.toggle('motion',motion());
+const progress=document.createElement('div');progress.className='scroll-progress';progress.setAttribute('aria-hidden','true');document.body.prepend(progress);
+function words(el){const walker=document.createTreeWalker(el,NodeFilter.SHOW_TEXT);const nodes=[];while(walker.nextNode())if(!walker.currentNode.parentElement.closest('.kw'))nodes.push(walker.currentNode);let n=0;nodes.forEach(node=>{const frag=document.createDocumentFragment();node.textContent.split(/(\s+)/).forEach(part=>{if(!part.trim()){frag.append(document.createTextNode(part));return;}const mask=document.createElement('span'),word=document.createElement('span');mask.className='word-mask';word.className='word';word.style.setProperty('--word-delay',`${n++*85+180}ms`);word.textContent=part;mask.append(word);frag.append(mask)});node.replaceWith(frag)});el.classList.add('word-title')}
+words($('.hero h1'));words($('.end h2'));
+const targets=[];
+function reveal(el,delay=0,cls='reveal'){el.classList.add(cls);el.style.setProperty('--delay',delay+'ms');targets.push(el)}
+$$('h2').forEach(el=>reveal(el));reveal($('.hero h1'),0,'word-title');
+$$('.hero .eyebrow,.hero .problem,.hero .kw,.hero .usp,.hero .proofline,.hero .btn,.hero .under').forEach((el,i)=>reveal(el,i*90));
+['.perks li','.why p','.easy > div','.card'].forEach(selector=>$$(selector).forEach((el,i)=>reveal(el,i*110)));
+reveal($('.me .sig'),0,'sig');reveal($('.end .logo'),0,'logo');
+const why=$('.why img'),whyWrap=document.createElement('div');whyWrap.className='why-photo';why.replaceWith(whyWrap);whyWrap.append(why);targets.push(whyWrap);
+const frame=document.createElement('div');frame.className='hero-frame';const original=$('.hero figure img');original.replaceWith(frame);frame.append(original);original.classList.add('active');
+['img/g9.jpg','img/g5.jpg'].forEach(src=>{const im=new Image();im.src=src;im.alt='';im.setAttribute('aria-hidden','true');frame.append(im)});
+for(let i=0;i<4;i++){const corner=document.createElement('i');corner.className='corner';corner.setAttribute('aria-hidden','true');frame.append(corner)}
+const shutter=document.createElement('div');shutter.className='shutter';shutter.setAttribute('aria-hidden','true');frame.append(shutter);
+let heroVisible=true,slide=0,timer=null;const slides=$$('img',frame);
+function autoplay(){clearInterval(timer);timer=null;const play=motion()&&!document.hidden&&heroVisible;frame.classList.toggle('paused',!play);if(play)timer=setInterval(()=>{slides[slide].classList.remove('active');slide=(slide+1)%slides.length;slides[slide].classList.add('active');shutter.classList.remove('flash');requestAnimationFrame(()=>requestAnimationFrame(()=>shutter.classList.add('flash')))},5000)}
+if(capable)new IntersectionObserver(entries=>{heroVisible=entries[0].isIntersecting;autoplay()}).observe($('.hero'));
+document.addEventListener('visibilitychange',autoplay);autoplay();
+const marquee=document.createElement('div');marquee.className='marquee';marquee.setAttribute('aria-hidden','true');marquee.innerHTML='<div class="marquee-track"><span>Maspalomas · Puerto Mogán · Las Canteras</span><span>Maspalomas · Puerto Mogán · Las Canteras</span><span>Maspalomas · Puerto Mogán · Las Canteras</span><span>Maspalomas · Puerto Mogán · Las Canteras</span></div>';$('.why').after(marquee);
+const grid=$('.grid'),photos=$$('img',grid),buttons=[];
+photos.forEach((im,i)=>{const b=document.createElement('button');b.type='button';b.className='photo-button'+(im.classList.contains('wide')?' wide':'');im.replaceWith(b);b.append(im);buttons.push(b);targets.push(b);b.addEventListener('click',()=>openPhoto(i,b))});
+const meter=document.createElement('div');meter.className='gallery-meter';meter.setAttribute('aria-hidden','true');meter.innerHTML='<span class="gallery-count">1 / 8</span><div class="track"><div class="fill"></div></div>';grid.after(meter);
+let galleryFrame=0;grid.addEventListener('scroll',()=>{if(galleryFrame)return;galleryFrame=requestAnimationFrame(()=>{galleryFrame=0;const max=grid.scrollWidth-grid.clientWidth;const fraction=max>0?grid.scrollLeft/max:0;$('.gallery-count',meter).textContent=`${Math.round(fraction*7)+1} / 8`;meter.style.setProperty('--gallery-progress',.125+fraction*.875)})},{passive:true});
+const dialog=document.createElement('dialog');dialog.className='lightbox';dialog.setAttribute('aria-labelledby','gal');
+const icon=(path)=>`<svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.5"><path d="${path}"/></svg>`;
+dialog.innerHTML=`<img alt=""><button class="lb-close" aria-label="Close">${icon('M6 6l12 12M18 6L6 18')}</button><button class="lb-prev" aria-label="Previous photo">${icon('m14 5-7 7 7 7')}</button><button class="lb-next" aria-label="Next photo">${icon('m10 5 7 7-7 7')}</button>`;document.body.append(dialog);
+let current=0,returnFocus=null,oldOverflow='';
+function displayPhoto(){const im=$('img',dialog);im.src=photos[current].src;im.alt=photos[current].alt}
+function openPhoto(i,button){current=i;returnFocus=button;displayPhoto();oldOverflow=document.body.style.overflow;document.body.style.overflow='hidden';dialog.showModal();$('.lb-close',dialog).focus()}
+function next(delta){current=(current+delta+photos.length)%photos.length;displayPhoto()}
+$('.lb-close',dialog).onclick=()=>dialog.close();$('.lb-prev',dialog).onclick=()=>next(-1);$('.lb-next',dialog).onclick=()=>next(1);
+dialog.addEventListener('close',()=>{document.body.style.overflow=oldOverflow;returnFocus?.focus({preventScroll:true})});
+dialog.addEventListener('keydown',e=>{if(e.key==='ArrowLeft'){e.preventDefault();next(-1)}if(e.key==='ArrowRight'){e.preventDefault();next(1)}});
+dialog.addEventListener('click',e=>{if(e.target===dialog)dialog.close();else if(e.target.tagName==='IMG'){const im=e.target,r=im.getBoundingClientRect(),ratio=Math.min(r.width/im.naturalWidth,r.height/im.naturalHeight),w=im.naturalWidth*ratio,h=im.naturalHeight*ratio;if(e.clientX<r.left+(r.width-w)/2||e.clientX>r.right-(r.width-w)/2||e.clientY<r.top+(r.height-h)/2||e.clientY>r.bottom-(r.height-h)/2)dialog.close()}});
+let touchX=0,touchY=0;dialog.addEventListener('touchstart',e=>{touchX=e.changedTouches[0].clientX;touchY=e.changedTouches[0].clientY},{passive:true});dialog.addEventListener('touchend',e=>{const dx=e.changedTouches[0].clientX-touchX,dy=e.changedTouches[0].clientY-touchY;if(Math.abs(dx)>50&&Math.abs(dx)>Math.abs(dy))next(dx<0?1:-1)},{passive:true});
+const counters=new Map();$$('.perks .n,.stats b,.price').forEach(el=>{const node=[...el.childNodes].find(n=>n.nodeType===3&&/\d/.test(n.textContent));if(node)counters.set(el,{node,text:node.textContent});targets.push(el)});
+function count(el){const c=counters.get(el);if(!c||c.started)return;c.started=true;if(!motion())return;let start;function tick(t){start??=t;const f=Math.min((t-start)/850,1),ease=1-Math.pow(1-f,3);c.node.textContent=f===1||!motion()?c.text:c.text.replace(/\d+/g,n=>String(Math.round(Number(n)*ease)));if(f<1&&motion())requestAnimationFrame(tick)}requestAnimationFrame(tick)}
+const observer=capable?new IntersectionObserver(entries=>entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('seen');count(e.target);observer.unobserve(e.target)}}),{threshold:.12}):null;
+targets.forEach(el=>{if(motion())observer.observe(el);else el.classList.add('seen')});
+const steps=$$('.steps li'),stepsList=$('.steps ol');steps.forEach(el=>el.classList.add('reveal'));
+const floating=$('.float'),floatLink=$('a',floating);floatLink.setAttribute('aria-label','Book on WhatsApp');floatLink.insertAdjacentHTML('afterbegin',$('.hero .btn svg').outerHTML);
+let heroCTAVisible=true,endCTAVisible=false,heroPassed=false;
+function updateFloat(){floating.classList.toggle('show',heroPassed&&!heroCTAVisible&&!endCTAVisible)}
+if(capable){new IntersectionObserver(entries=>{for(const e of entries){if(e.target===$('.hero .btn')){heroCTAVisible=e.isIntersecting;heroPassed=e.boundingClientRect.bottom<=64}else endCTAVisible=e.isIntersecting}updateFloat()},{rootMargin:'-64px 0px 0px 0px',threshold:0}).observe($('.hero .btn'));new IntersectionObserver(entries=>{endCTAVisible=entries[0].isIntersecting;updateFloat()}).observe($('.end .btn'))}else floating.classList.add('show');
+let pending=false;
+function scrollUpdate(){pending=false;const vh=innerHeight,rect=stepsList.getBoundingClientRect(),whyRect=whyWrap.getBoundingClientRect();progress.style.transform=`scaleX(${scrollY/Math.max(1,root.scrollHeight-vh)})`;const f=Math.max(0,Math.min(1,(vh*.82-rect.top)/Math.max(rect.height,1)));stepsList.style.setProperty('--step-progress',motion()?f:1);steps.forEach((el,i)=>{if(!motion()||f>=(innerWidth>=900?i*.28:(el.offsetTop/Math.max(rect.height,1))))el.classList.add('seen')});if(motion()&&whyRect.bottom>0&&whyRect.top<vh)whyWrap.style.setProperty('--parallax',`${Math.max(-3,Math.min(3,(vh/2-whyRect.top-whyRect.height/2)/vh*6))}%`)}
+function schedule(){if(!pending){pending=true;requestAnimationFrame(scrollUpdate)}}addEventListener('scroll',schedule,{passive:true});addEventListener('resize',schedule,{passive:true});schedule();
+/* FAQ uses a measured FLIP transition: only transforms and clipping animate.
+   The layout changes once per toggle; no animated height or per-frame reflow. */
+$$('.faq details').forEach(details=>{const summary=$('summary',details),answer=$('p',details);let busy=false;summary.addEventListener('click',e=>{if(!motion()||!Element.prototype.animate)return;e.preventDefault();if(busy)return;busy=true;const before=$$('.faq details,.end,footer').map(el=>[el,el.getBoundingClientRect().top]);if(details.open){const a=answer.animate([{opacity:1,clipPath:'inset(0 0 0 0)'},{opacity:0,clipPath:'inset(0 0 100% 0)'}],{duration:250,easing:'ease-out'});a.onfinish=()=>{details.open=false;flip();busy=false}}else{details.open=true;flip();answer.animate([{opacity:0,clipPath:'inset(0 0 100% 0)'},{opacity:1,clipPath:'inset(0 0 0 0)'}],{duration:500,easing:'cubic-bezier(.2,.7,.2,1)'}).onfinish=()=>busy=false}function flip(){const offsets=before.map(([el,y])=>[el,y-el.getBoundingClientRect().top]);offsets.forEach(([el,dy])=>{if(dy)el.animate([{transform:`translateY(${dy}px)`},{transform:'translateY(0)'}],{duration:500,easing:'cubic-bezier(.2,.7,.2,1)'})})}})});
+if(matchMedia('(hover:hover) and (pointer:fine)').matches){$$('.card,.hero .btn,.end .btn,.card.pick .btn').forEach(el=>{let raf=0,x=0,y=0;el.addEventListener('pointermove',e=>{if(!motion())return;x=e.clientX;y=e.clientY;if(raf)return;raf=requestAnimationFrame(()=>{raf=0;const r=el.getBoundingClientRect(),dx=(x-r.left)/r.width-.5,dy=(y-r.top)/r.height-.5;if(el.classList.contains('card')){el.style.setProperty('--rx',`${Math.max(-2,Math.min(2,-dy*4))}deg`);el.style.setProperty('--ry',`${Math.max(-2,Math.min(2,dx*4))}deg`)}else el.style.transform=`translate(${Math.max(-6,Math.min(6,dx*12))}px,${Math.max(-6,Math.min(6,dy*12))}px)`})});el.addEventListener('pointerleave',()=>{cancelAnimationFrame(raf);raf=0;el.style.removeProperty('--rx');el.style.removeProperty('--ry');el.style.removeProperty('transform')})})}
+reduced.addEventListener('change',()=>{root.classList.toggle('motion',motion());if(!motion()){targets.forEach(el=>el.classList.add('seen'));counters.forEach(c=>c.node.textContent=c.text);$$('.card,.btn').forEach(el=>{el.style.removeProperty('transform');el.style.removeProperty('--rx');el.style.removeProperty('--ry')});document.getAnimations().forEach(a=>a.finish())}autoplay();schedule()});
+})();
+
+</script>
+</body>
+</html>
